@@ -29,3 +29,8 @@ The original "Source" software has not been analyzed or disassembled in any way.
 
 LICENSE
 The library is released unter the terms of the GPLv3.
+
+MAC
+Install the required libraries using homebrew before compiling:
+
+ $ brew install cmake boost
