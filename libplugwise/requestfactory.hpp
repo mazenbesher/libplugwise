@@ -31,7 +31,7 @@
 namespace plugwise {
   class RequestFactory {
     public:
-      typedef std::tr1::shared_ptr<RequestFactory> Ptr;
+      typedef std::shared_ptr<RequestFactory> Ptr;
       RequestFactory () {};
       StickInitRequest::Ptr getStickInitRequest() const;
       CalibrationRequest::Ptr getCalibrationRequest(const std::string& _device_id) const;

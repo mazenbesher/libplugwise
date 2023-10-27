@@ -27,7 +27,7 @@
 namespace plugwise {
   class CalibrationRequest : public Request {
     public:
-      typedef std::tr1::shared_ptr<CalibrationRequest> Ptr;
+      typedef std::shared_ptr<CalibrationRequest> Ptr;
       CalibrationRequest (std::string circle_mac) :
         _circle_mac(circle_mac) {};
       void send(plugwise::Connection::Ptr con);

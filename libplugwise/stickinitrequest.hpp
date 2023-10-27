@@ -27,7 +27,7 @@
 namespace plugwise {
   class StickInitRequest : public Request {
     public:
-      typedef std::tr1::shared_ptr<StickInitRequest> Ptr;
+      typedef std::shared_ptr<StickInitRequest> Ptr;
       StickInitRequest () {};
       void send(plugwise::Connection::Ptr con);
       virtual ~StickInitRequest() {};

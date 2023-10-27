@@ -7,7 +7,7 @@
 namespace plugwise {
   class Request {
     public:
-      typedef std::tr1::shared_ptr<Request> Ptr;
+      typedef std::shared_ptr<Request> Ptr;
       Request () {};
       virtual void send(Connection::Ptr con) = 0;
       virtual ~Request() {}; 

@@ -27,7 +27,7 @@
 namespace plugwise {
   class PowerConverter {
     public:
-      typedef std::tr1::shared_ptr<PowerConverter> Ptr;
+      typedef std::shared_ptr<PowerConverter> Ptr;
       PowerConverter (plugwise::CalibrationResponse::Ptr calibration) :
         _calibration(calibration) {};
       double convertToWatt(PowerInformationResponse::Ptr pir);

@@ -8,7 +8,7 @@
 namespace plugwise {
   class StickInitResponse : public Response {
     public:
-      typedef std::tr1::shared_ptr<StickInitResponse> Ptr;
+      typedef std::shared_ptr<StickInitResponse> Ptr;
       StickInitResponse ( const std::string& line1, 
                           const std::string& line2) :
         Response(line1, line2) { parse_line2(); };

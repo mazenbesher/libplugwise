@@ -32,7 +32,7 @@
 namespace plugwise {
   class ResponseFactory {
     public:
-      typedef std::tr1::shared_ptr<ResponseFactory> Ptr;
+      typedef std::shared_ptr<ResponseFactory> Ptr;
       ResponseFactory (Connection::Ptr con) :
         _con(con) {} ;
       Response::Ptr receive();

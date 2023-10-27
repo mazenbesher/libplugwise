@@ -28,7 +28,7 @@
 namespace plugwise {
   class GenericException : public std::exception {
 	public:
-	  typedef std::tr1::shared_ptr<GenericException> Ptr;
+	  typedef std::shared_ptr<GenericException> Ptr;
 	  GenericException (const std::string reason) : _reason(reason) {};
 	  virtual ~GenericException() throw() {};
 	  virtual const char* what() const throw() { return reason().c_str(); }
@@ -40,7 +40,7 @@ namespace plugwise {
 
   class CommunicationException : public GenericException{
 	public:
-	  typedef std::tr1::shared_ptr<CommunicationException> Ptr;
+	  typedef std::shared_ptr<CommunicationException> Ptr;
 	  CommunicationException (const std::string reason) :
 		plugwise::GenericException(reason) {};
 	  virtual ~CommunicationException() throw() {};
@@ -49,7 +49,7 @@ namespace plugwise {
   
   class DataFormatException : public GenericException{
 	public:
-	  typedef std::tr1::shared_ptr<DataFormatException> Ptr;
+	  typedef std::shared_ptr<DataFormatException> Ptr;
 	  DataFormatException (const std::string reason) :
 		plugwise::GenericException(reason) {};
 	  virtual ~DataFormatException() throw() {};

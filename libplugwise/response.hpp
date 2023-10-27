@@ -8,7 +8,7 @@
 namespace plugwise {
   class Response {
     public:
-      typedef std::tr1::shared_ptr<Response> Ptr;
+      typedef std::shared_ptr<Response> Ptr;
       Response () {};
       Response (const std::string& line1, 
                 const std::string& line2); 

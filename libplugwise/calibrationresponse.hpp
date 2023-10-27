@@ -29,7 +29,7 @@
 namespace plugwise {
   class CalibrationResponse : public Response {
     public:
-      typedef std::tr1::shared_ptr<CalibrationResponse> Ptr;
+      typedef std::shared_ptr<CalibrationResponse> Ptr;
       CalibrationResponse ( const std::string& line1, 
                           const std::string& line2) :
         Response(line1, line2) { parse_line2(); };

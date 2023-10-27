@@ -27,7 +27,7 @@
 namespace plugwise {
   class PowerInformationRequest : public Request {
     public:
-      typedef std::tr1::shared_ptr<PowerInformationRequest> Ptr;
+      typedef std::shared_ptr<PowerInformationRequest> Ptr;
       PowerInformationRequest (std::string circle_mac) :
         _circle_mac(circle_mac) {};
       void send(plugwise::Connection::Ptr con);
